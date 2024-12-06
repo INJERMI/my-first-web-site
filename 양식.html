@@ -1,0 +1,154 @@
+<!-- 이미지와 식당 이름에 링크 연결을 해야할듯 -->
+
+<!DOCTYPE html>
+<html>
+<title>양식 맛집 리스트</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+@font-face{
+  font-family: 'Jua';
+  src:url(Jua-Regular.eot);
+  src:url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+  url(Jua-Regular.woff) format('woff'),
+  url(Jua-Regular.ttf) format('truetype');
+src:local(※), url(Jua-Regular.woff) format('woff'); }
+.fontj {font-family:"Jua", sans-serif;}
+
+.m-bar-block .m-bar-item {padding:20px}
+.navcenter{
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
+  text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
+}
+.navmenu:hover{
+  background-color: none;
+  font-weight: bold;
+}
+.active{
+  font-weight: bold;
+}
+.last{
+  border-right : none;
+}</style>
+<body>
+
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <div class="m-center m-xlarge fontj" style="margin:30px 0 0 0">양식</div>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="max-width:1200px;margin:auto">
+      <a href="index.html" class="m-padding-16 m-left" onclick="function1()">
+      <img src="logo.png" alt="logo" style="width:95px;height:50px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+<!-- !PAGE CONTENT! -->
+<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
+  <div>
+    <div class="navcenter">
+      <a href="한식.html" class="navmenu">한식</a>
+      <a href="중식.html" class="navmenu">중식</a>
+      <a href="일식.html" class="navmenu">일식</a>
+      <a href="양식.html" class="navmenu active">양식</a>
+      <a href="디저트.html" class="navmenu last">디저트</a>
+    </div>
+  </div>
+  <hr>
+
+  <!-- First Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-center" id="food">
+    <div class="m-quarter">
+      <a href="마고피자.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240329_298%2F1711695777055Ecclb_JPEG%2FIMG_3560.JPEG" alt="마고피자" style="width:250px; height: 250px;">
+        <h3>마고피자</h3>
+      </a>
+      <p>가톨릭대 학생들이 제일 많이 가는 피자집</p>
+    </div>
+    <div class="m-quarter">
+      <a href="양식/크라이치즈버거.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231115_282%2F1700049181924xY2rI_JPEG%2FKakaoTalk_20211015_150402450_26.jpg" alt="크라이치즈버거" style="width:250px; height: 250px;">
+        <h3>크라이치즈버거</h3>
+      </a>
+      <p>수제버거, 치즈감튀가 정말 맛있는 집</p>
+    </div>
+    <div class="m-quarter">
+      <a href="양식/새우식탁.html" style="text-decoration : none;">
+        <img src=https://ldb-phinf.pstatic.net/20180829_127/1535541695324TBw4j_JPEG/zWjuGkvxOLeXREmrLyhSzROV.jpeg.jpg" alt="새우식탁" style="width:250px; height: 250px;">
+        <h3>새우식탁</h3>
+      </a>
+      <p>가성비 있는 파스타집</p>
+    </div>
+    <div class="m-quarter">
+      <a href="양식/베어키친.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA5MjFfMTM0%2FMDAxNzI2OTEzODU2MTk0.3wIvWBCLx5s7ZISP2J1TBDtMtNp1SU3wS8OXSlKQLRMg.0rG27AAe35KYtA7RV6la7igZiR5Wn7Pc20dodGcBGVwg.JPEG%2F1000027320.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="베어키친" style="width:250px; height: 250px;">
+        <h3>베어키친</h3>
+      </a>
+      <p>파스타 종류도 많고 저렴하고 맛도 있는 집</p>
+    </div>
+  </div>
+  <!-- Second Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-center">
+    <div class="m-quarter">
+      <a href="양식/1983피자앤펍.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240417_267%2F1713358177979QVSR1_JPEG%2F%25B9%25E9%25C1%25BE%25BF%25F8%25C7%25C7%25C0%25DA.jpg" alt="1993피자앤펍" style="width:250px; height: 250px;">
+        <h3>1983피자앤펍</h3>
+      </a>
+      <p>골목식당에 출연한 이색 피자집</p>
+    </div>
+    <div class="m-quarter">
+      <a href="양식/우키샌트위치.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMjNfMjQ5%2FMDAxNzI5NjYzNjgyNDgy.8zJ2-xYlBgk2MHpEprDHIfGUY-OP028J36pt4p3eApYg.EUyd3lc0ijeqUJTPItp-C6uLewINlS5ttAPpcdz05qEg.JPEG%2FIMG_5488.jpg" alt="우키샌드위치" style="width:250px; height: 250px;">
+        <h3>우키샌드위치</h3>
+      </a>
+      <p>생연어 샌드위치 맛집</p>
+    </div>
+    <div class="m-quarter">
+      <a href="양식/피제이피자.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220722_95%2F1658426654786z4Hft_JPEG%2Fimage.jpg" alt="피제이피자" style="width:250px; height: 250px;">
+        <h3>피제이피자</h3>
+      </a>
+      <p>가성비 좋은 피자집</p>
+    </div>
+    <div class="m-quarter">
+      <a href="양식/스위트브런치.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDAxMTJfMjQx%2FMDAxNzA1MDQyOTk2MDAy.Vmw32bisB9fY7LhRd-seMOPMIZoghvwQyiErXmbkRA0g.ay14-9sYNVOpV1l0Z65l-qmz4pV-oqcuNBZXQjr5Dy0g.JPEG%2F7249C3E2-73DD-4856-B463-FCC9CFAC0DBB.jpeg%3Ftype%3Dw1500_60_sharpen" alt="스위트브런치" style="width:250px; height: 250px;">
+        <h3>스위트브런치</h3>
+      </a>
+      <p>브런치로 먹기 딱 좋은집</p>
+    </div>
+  </div>
+  <!-- Pagination -->
+</div>
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="#" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="#" class="m-bar-item m-black m-button">1</a>
+      <a href="양식2.html" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="양식2.html" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+
+</body>
+</html>

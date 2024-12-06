@@ -1,0 +1,155 @@
+<!-- 템플릿 적용-->
+<!DOCTYPE html>
+<html>
+<title>남경</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif
+  }
+
+  .w3-bar,
+  h1,
+  button {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .fa-anchor,
+  .fa-coffee {
+    font-size: 200px
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Karma", sans-serif
+  }
+
+  .w3-bar-block .w3-bar-item {
+    padding: 20px
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+</style>
+
+<body>
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-medium w3-animate-left"
+    style="display:none;z-index:2;width:20%;min-width:200px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="한식.html" onclick="w3_close()" class="w3-bar-item w3-button">한식</a>
+    <a href="중식.html" onclick="w3_close()" class="w3-bar-item w3-button">중식</a>
+    <a href="일식.html" onclick="w3_close()" class="w3-bar-item w3-button">일식</a>
+    <a href="양식.html" onclick="w3_close()" class="w3-bar-item w3-button">양식</a>
+    <a href="디저트.html" onclick="w3_close()" class="w3-bar-item w3-button">디저트</a>
+  </nav>
+  <!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">&#9776;</div>
+      <div class="w3-center w3-padding-16">남경중화요리</div>
+    </div>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-quarter w3-block">
+        <img
+          src="http://imagefarm.baemin.com/smartmenuimage/upload/image/2023/3/22/y0NnjyPNTjbaTunL9cjFaLiP1KvX_xd0Pp5-bjq3Xf4m-F9sFFpnqmNeAevttdmSqqQQ3F_5FCdGAOz-i0SQtFtYvZkFN3fxMzUFS0XR-N8=.jpg"
+          alt="남경" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img
+          src="http://imagefarm.baemin.com/smartmenuimage/upload/image/2023/3/22/D6og3obhFHhnjrahFrmc-WGUYCCO-JzknKgH4gJVKKL9XmEvdMkZ6piDEOCNovMqBBSvpqA0dG3xyjnuYAq9Zdm_iTWij42_O98vzbk50c0=.jpg"
+          alt="남경" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img
+          src="http://imagefarm.baemin.com/smartmenuimage/upload/image/2023/3/22/oEy-LYQH35HBZtOS_-ieTgwYR_6L2Ll2CFJwliD1YrngHC2S7FWa8ldKmlwLBQG07khbKAPDITxCW-p9S1NmxrDyvArr0y8TSVQF4AfhGeI=.jpg""
+          alt="남경" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img
+          src="http://file.smartbaedal.com/usr/menuitm/2012/07/m000178_a02_1280.jpg"
+          alt="남경" style="width:100%">
+      </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <table style="margin:auto; width:70%; padding:10px;">
+        <tr>
+          <th>종류</th>
+          <td>중식</td>
+        </tr>
+        <tr>
+          <th>영업<br>시간</th>
+          <td>매일 : 10:30 ~ 21:00</td>
+        </tr>
+        <tr>
+          <th>메뉴</th>
+          <td>
+            <ul style="list-style-type:none; ">
+              <li>짜장면 7000</li>
+              <li>짬뽕 8000</li>
+              <li>볶음밥 8500</li>
+              <li>탕볶밥 12000</li>
+              <li>탕수육(소)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>주소</th>
+          <td>경기 부천시 원미구 지봉로 52</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.9212523167416!2d126.80268611197963!3d37.48618462861417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b62ea243e4e47%3A0x3322a55cd630fed7!2z64Ko6rK97KSR7ZmU7JqU66as!5e0!3m2!1sko!2skr!4v1732989176536!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <hr id="about">
+
+
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+
+</body>
+
+</html>

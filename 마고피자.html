@@ -1,0 +1,142 @@
+<!-- 템플릿 적용-->
+<!DOCTYPE html>
+<html>
+<title>마고피자</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif
+  }
+
+  .w3-bar,
+  h1,
+  button {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .fa-anchor,
+  .fa-coffee {
+    font-size: 200px
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Karma", sans-serif
+  }
+
+  .w3-bar-block .w3-bar-item {
+    padding: 20px
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+</style>
+
+<body>
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-medium w3-animate-left"
+    style="display:none;z-index:2;width:20%;min-width:200px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="한식.html" onclick="w3_close()" class="w3-bar-item w3-button">한식</a>
+    <a href="중식.html" onclick="w3_close()" class="w3-bar-item w3-button">중식</a>
+    <a href="일식.html" onclick="w3_close()" class="w3-bar-item w3-button">일식</a>
+    <a href="양식.html" onclick="w3_close()" class="w3-bar-item w3-button">양식</a>
+    <a href="디저트.html" onclick="w3_close()" class="w3-bar-item w3-button">디저트</a>
+  </nav>
+  <!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">&#9776;</div>
+      <div class="w3-center w3-padding-16">마고피자</div>
+    </div>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-quarter">
+        <img src=https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240329_298%2F1711695777055Ecclb_JPEG%2FIMG_3560.JPEG alt="마고피자" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240329_283%2F1711695717358qLmVS_JPEG%2FIMG_3392.JPEG" alt="마고피자" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240329_108%2F1711695464917S3Cmr_JPEG%2FIMG_3675.JPEG" alt="마고피자" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240329_72%2F1711695653350de7zd_JPEG%2FIMG_3316.JPEG" alt="마고피자" style="width:100%">
+      </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <table style="margin:auto; width:70%; padding:10px;">
+        <tr>
+          <th>종류</th>
+          <td>양식</td>
+        </tr>
+        <tr>
+          <th>영업<br>시간</th>
+          <td>매일 : 11:00 ~ 21:00</td>
+        </tr>
+        <tr>
+          <th>메뉴</th>
+          <td>
+            <ul style="list-style-type:none; ">
+              <li>치즈피자 6900</li>
+              <li>페퍼로니피자 7900</li>
+              <li>콘치즈피자 7900</li>
+              <li>하와이언피자 7900</li>
+              <li>엘로우고구마무스피자 7900</li>
+              <li>베이컨포테이토피자 7900</li>
+              <li>갈릭포테이토피자 7900</li>
+              <li>바삭닭껍질피자 8900</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>주소</th>
+          <td>경기 부천시 원미구 부일로699번길 30</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809841.325692049!2d126.4349958371507!3d37.54463295681583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cdb007cf2e507%3A0xd22e34431247a925!2z66eI6rOg7ZS87J6Q!5e0!3m2!1sko!2skr!4v1732988725298!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

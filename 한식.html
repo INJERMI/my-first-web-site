@@ -1,0 +1,157 @@
+<!-- 이미지와 식당 이름에 링크 연결을 해야할듯 -->
+
+<!DOCTYPE html>
+<html>
+<title>한식 맛집 리스트</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+@font-face{
+  font-family: 'Jua';
+  src:url(Jua-Regular.eot);
+  src:url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+  url(Jua-Regular.woff) format('woff'),
+  url(Jua-Regular.ttf) format('truetype');
+src:local(※), url(Jua-Regular.woff) format('woff'); }
+.fontj {font-family:"Jua", sans-serif;}
+
+.m-bar-block .m-bar-item {padding:20px}
+.navcenter{
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
+  text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
+}
+.navmenu:hover{
+  background-color: none;
+  font-weight: bold;
+}
+.active{
+  font-weight: bold;
+}
+.last{
+  border-right : none;
+}
+</style>
+<body>
+
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <div class="m-center m-xlarge fontj" style="margin:30px 0 0 0">한식</div>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="max-width:1200px;margin:auto">
+      <a href="index.html" class="m-padding-16 m-left" onclick="function1()">
+      <img src="logo.png" alt="logo" style="width:95px;height:50px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+<!-- !PAGE CONTENT! -->
+<div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
+  <div>
+    <div class="navcenter">
+      <a href="한식.html" class="navmenu active">한식</a>
+      <a href="중식.html" class="navmenu">중식</a>
+      <a href="일식.html" class="navmenu ">일식</a>
+      <a href="양식.html" class="navmenu">양식</a>
+      <a href="디저트.html" class="navmenu last">디저트</a>
+    </div>
+  </div>
+  <hr>
+
+
+  <!-- First Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-center" id="food">
+    <div class="m-quarter">
+      <a href="the53.html" style="text-decoration : none;">
+        <img src="https://ldb-phinf.pstatic.net/20240715_197/17210553135929FTIm_JPEG/IMG_4130.jpeg" alt="the53" style="width:250px; height: 250px;">
+        <h4>the53</h4>
+      </a>
+      <p>근본 제육</p>
+    </div>
+    <div class="m-quarter">
+      <a href="한식/손가.html" style="text-decoration : none;">
+        <img src="http://file.smartbaedal.com/usr/menuitm/2013/1/21/m00037001211633_a01_1280.jpg" alt="손가" style="width:250px; height: 250px;">
+        <h4>손가</h4>
+      </a>
+      <p>매운갈비찜 맛집</p>
+    </div>
+    <div class="m-quarter">
+      <a href="한식/들깨랑보리보리.html" style="text-decoration : none;">
+        <img src="http://bit.ly/2HlQ1Rw" alt="들깨랑보리보리" style="width:250px; height: 250px;">
+        <h4>들깨랑보리보리</h4>
+      </a>
+      <p>진한 들깨 칼국수, 수제비</p>
+    </div>
+    <div class="m-quarter">
+      <a href="한식/메밀꽃필무렵.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDExMDZfMjIy%2FMDAxNzMwODUwNjY2OTM3.gjthVY2yEGgrnuRbJXMDhXtbBrdvFzNFUctWZdCtM10g.J2S9tiGoVyRl0-tnxWbMLZr18nv5-VTezhHaaTVjXBcg.JPEG%2F20241022%25A3%25DF203331.jpg&type=sc960_832" alt="메밀꽃필무렵" style="width:250px; height: 250px;">
+        <h4>메밀꽃필무렵</h4>
+      </a>
+      <p>가성비 있는 집밥</p>
+    </div>
+  </div>
+  <!-- Second Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-center">
+    <div class="m-quarter">
+      <a href="한식/울엄마손칼국시.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzEwMjBfMjIw%2FMDAxNjk3ODA2NjY1MDM0.RJtlNBv5SjL6YsXQWPp52RVbHVbYqzpgQybcXH4UAOgg.Vv3xzmm-SG5wYLklm8b1sh4UlAoSsf9ohbdtgCDYdBQg.JPEG%2Fupload_617a0c7283161fe8531f98d3951ca908.jpeg%3Ftype%3Dw1500_60_sharpen" alt="울엄마손칼국시" style="width:250px; height: 250px;">
+        <h4>울엄마손칼국시</h4>
+      </a>
+      <p>골목식당에 출연한  얼큰 칼국수</p>
+    </div>
+    <div class="m-quarter">
+      <a href="한식/춘천애닭갈비.html" style="text-decoration : none;">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDExMDJfMjUw%2FMDAxNzMwNDc3MDY3NzA4.AGBfPDwlCQv10qpy0i2GEikRRzwu-8bIBFnlhSUXjnIg.mS7RsMKkbOy7bLLZJI11Jq7vtUmz39qZeKxijjbB97cg.JPEG%2FIMG_7514.jpg" alt="춘천애닭갈비" style="width:250px; height: 250px;">
+        <h4>춘천애닭갈비2</h4>
+      </a>
+      <p>우동사리를 꼭 추가해서 먹어야 하는 닭갈비</p>
+    </div>
+    <div class="m-quarter">
+      <a href="한식/등촌칼국수.html" style="text-decoration : none;">
+        <img src="https://ldb-phinf.pstatic.net/20220714_204/1657770258915WGxkx_JPEG/5A34B73C-CDB4-4AE4-AC47-92D07C1898E6.jpeg" alt="등촌샤브칼국수" style="width:250px; height: 250px;">
+        <h4>등촌샤브칼국수</h4>
+      </a>
+      <p>항상 맛있는 샤브칼국수</p>
+    </div>
+    <div class="m-quarter">
+      <a href="한식/본맛송탄부대찌개.html" style="text-decoration : none;">
+        <img src=https://ldb-phinf.pstatic.net/20230718_34/1689667214411CGQbQ_JPEG/1689666173629.jpg" alt="본맛송탄부대찌개" style="width:250px; height: 250px;">
+        <h3>본맛송탄부대찌개</h3>
+      </a>
+      <p>햄이 맛있는 부대찌개</p>
+    </div>
+  </div>
+  <!-- Pagination -->
+</div>
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="#" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="#" class="m-bar-item m-black m-button">1</a>
+      <a href="한식2.html" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="한식2.html" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

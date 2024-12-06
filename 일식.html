@@ -1,0 +1,179 @@
+<!-- 이미지와 식당 이름에 링크 연결을 해야할듯 -->
+
+<!DOCTYPE html>
+<html>
+<title>일식 맛집 리스트</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "JejuGothic", sans-serif
+  }
+
+  @font-face {
+    font-family: 'Jua';
+    src: url(Jua-Regular.eot);
+    src: url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+      url(Jua-Regular.woff) format('woff'),
+      url(Jua-Regular.ttf) format('truetype');
+    src: local(※), url(Jua-Regular.woff) format('woff');
+  }
+
+  .fontj {
+    font-family: "Jua", sans-serif;
+  }
+
+  .m-bar-block .m-bar-item {
+    padding: 20px
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .navcenter {
+    margin: auto;
+    padding: 0;
+    background-color: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navmenu {
+    padding: 0px 10px 0px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px solid rgb(180, 180, 180);
+  }
+
+  .navmenu:hover {
+    background-color: none;
+    font-weight: bold;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
+  .last {
+    border-right: none;
+  }
+</style>
+
+<body>
+
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <div class="m-center m-xlarge fontj" style="margin:30px 0 0 0">일식</div>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="max-width:1200px;margin:auto">
+      <a href="index.html" class="m-padding-16 m-left" onclick="function1()">
+        <img src="logo.png" alt="logo" style="width:95px;height:50px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="m-main m-content m-padding" style="max-width:1200px;margin-top:100px">
+    <div>
+      <div class="navcenter">
+        <a href="한식.html" class="navmenu">한식</a>
+        <a href="중식.html" class="navmenu">중식</a>
+        <a href="일식.html" class="navmenu active">일식</a>
+        <a href="양식.html" class="navmenu">양식</a>
+        <a href="디저트.html" class="navmenu last">디저트</a>
+      </div>
+    </div>
+    <hr>
+
+    <p id="demo"></p>
+
+    <!-- First Photo Grid-->
+    <div class="m-row-padding m-padding-16 m-center" id="food">
+      <div class="m-quarter">
+        <a href="신동랩.html">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240823_95%2F1724376428833JdHxq_JPEG%2FIMG_2790.jpg" alt="신동랩" style="width:250px; height: 250px;">
+          <h3>신동랩</h3>
+        </a>
+        <p>캠퍼스 데이트 코스 맛집</p>
+      </div>
+      <div class="m-quarter">
+        <a href="일식/멘야시오리.html">
+          <img src=https://search.pstatic.net/common/?src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20231220_243%2F1703043949308m3ohr_JPEG%2Fimage.jpg" alt="멘야시오리" style="width:250px; height: 250px;">
+          <h3>멘야시오리</h3>
+        </a>
+        <p>열과 혼을 다한 최상의 라멘</p>
+      </div>
+      <div class="m-quarter">
+        <a href="일식/매화스시.html">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDExMjRfMTkg%2FMDAxNzMyNDM1NjY4NTc0.nNo6v_0j41ACpyhYWTwzsBdD3dnkjZ7AE02gq1xkAlwg.Xok-NK8W8YHlMO0LFUUz4797ANDgTcR25t7u266tQ3gg.JPEG%2FC5689CAF-7126-482D-822C-9615059755B0.jpeg%3Ftype%3Dw1500_60_sharpen" alt="매화스시" style="width:250px; height: 250px;">
+          <h3>매화스시</h3>
+        </a>
+        <p>회가 크고 신선한 스시 맛집</p>
+      </div>
+      <div class="m-quarter">
+        <a href="일식/스시마리오.html">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200812_265%2F1597221727420yHtOd_JPEG%2FoOUj0s0zVk15E2neDku1jPwi.jpg" alt="스시마리오" style="width:250px; height: 250px;">
+          <h3>스시마리오</h3>
+        </a>
+        <p>가성비 깡패 스시집</p>
+      </div>
+      <div class="m-quarter">
+        <a href="일식/스시락.html">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzAyMTFfMTAx%2FMDAxNjc2MTA0MjE2MzMx.VopqntI5LKVFjVExf_uReXGlBQMaTRn3YJH6C256g_gg.bKjUKND4Mcnp_KtDX6I3ML3yQE5e9Tc8VKU__aAWUaIg.JPEG%2F59C63F7A-C4DF-4ED0-8B1D-8DEC7FBFDBF2.jpeg%3Ftype%3Dw1500_60_sharpen" alt="스시락" style="width:250px; height: 250px;">
+          <h3>스시락</h3>
+        </a>
+        <p>혼밥하기 좋은 스시집</p>
+      </div>
+      <div class="m-quarter">
+        <a href="일식/오무야.html">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241013_34%2F1728789672715S39ms_JPEG%2F1000011216.jpg" alt="오무야" style="width:250px; height: 250px;">
+          <h3>오무야</h3>
+        </a>
+        <p>삿포로식 야채스프카레 맛집</p>
+      </div>
+      <div class="m-quarter">
+        <a href="일식/호식당.html">
+          <img src="https://ldb-phinf.pstatic.net/20201219_254/1608305213462K6Qq7_JPEG/Ba91Ginm8nI34hMSjDxoDQhO.jpg" alt="호식당" style="width:250px; height: 250px;">
+          <h3>호식당</h3>
+        </a>
+        <p>가톨릭대 후문에 있는 유일한 맛집</p>
+      </div>
+      <div class="m-quarter">
+        <a href=일식/쇼사돈부리.html">
+          <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230423_67%2F1682238932773e1Tur_JPEG%2FA7R02732.jpg" alt="쇼사돈부리" style="width:250px; height: 250px;">
+          <h3>쇼사돈부리</h3>
+        </a>
+        <p>분위기 좋은 덮밥집</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="#" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="#" class="m-bar-item m-black m-button">1</a>
+      <a href="일식2.html" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="일식2.html" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
