@@ -1,20 +1,62 @@
-<!doctype html>
-<html>
-<head>
-    <title>WEB1 - WELCOME</title>
-    <meta charset="utf-8">
-</head>
-<body>
-    <h1><a href = "index.html">WEB</a></h1>
-    <ol>
-        <li><a href = "1.html">HTML</a></li>
-        <li><a href = "2.html">CSS</a></li>
-        <li><a href = "3.html">JavaScript</a></li>
-    </0l>
+<!DOCTYPE html>
+<meta charset="utf-8"> <!-- 한글 안깨지도록 -->
 
-    <h2>WEB</h2>
-    <p>
-        Web is a computer programming system created by Donald E. Knuth as the first implementation of what he called "literate programming": the idea that one could create software as works of literature, by embedding source code inside descriptive text, rather than the reverse (as is common practice in most programming languages), in an order that is convenient for exposition to human readers, rather than in the order demanded by the compiler.[1]
-    </p>
+<title> 가톨릭대 맛집 리스트 </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Jua'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "JejuGothic", sans-serif
+  }
+
+  .m-bar,
+  button {
+    font-family: "Jua", sans-serif
+  }
+
+  .fa-anchor,
+  .fa-coffee {
+    font-size: 200px
+  }
+
+  body {
+    background-image: url('푸드트립.png');
+    background-repeat: no-repeat;
+    background-position: 0% -20%;
+    background-size: 100% 620%;
+  }
+</style>
+
+<body>
+  <img style="margin: 20px 30px 30px 30px;"  src="logo.png" alt="로고" width="120" height="80">
+  <div class="m-top">
+      <h1 style="text-align:right; margin:20px 20px 0px 0px;">
+        <b>가톨릭대 맛집 리스트</b></h1>
+  </div>
+
+
+  <!--버튼--> 
+  <div class="m-top">
+    <div class="m-indigo m-large" style="position:fixed; right:0px; top:80px;">
+      <a href="한식.html" class="m-bar-item m-padding-large" style="text-decoration:none">한식</a>
+      <a href="중식.html" class="m-bar-item m-padding-large" style="text-decoration:none">중식</a>
+      <a href="일식.html" class="m-bar-item m-padding-large" style="text-decoration:none">일식</a>
+      <a href="양식.html" class="m-bar-item m-padding-large" style="text-decoration:none">양식</a>
+      <a href="디저트.html" class="m-bar-item m-padding-large" style="text-decoration:none">디저트</a>
+    </div>
+  </div>
+
 </body>
+
 </html>
